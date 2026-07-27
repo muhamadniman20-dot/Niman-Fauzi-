@@ -39,7 +39,7 @@ export default function Home() {const [currentBanner, setCurrentBanner] = useSta
   className="text-white p-8 bg-cover bg-center"
   style={{
     backgroundImage:
-      "url('a_high_end_3d_product_showcase_scene_on_a_dark_ci.png')",
+      "url('https://imgur.com/a/5pRmYTS')",
   }}
 >
   <h1 className="text-5xl font-extrabold">

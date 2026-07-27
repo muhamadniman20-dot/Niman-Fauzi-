@@ -3,7 +3,8 @@
 import { useEffect, useState } from "react";
 import { supabase } from "./lib/supabase";
 
-export default function Home() {const [currentBanner, setCurrentBanner] = useState(0);
+export default function Home() 
+{const [currentBanner, setCurrentBanner] = useState(0);
   const banners = [
   "https://images.unsplash.com/photo-1441986300917-64674bd600d8",
   "https://images.unsplash.com/photo-1483985988355-763728e1935b",
@@ -82,7 +83,7 @@ WhatsApp
 <section className="p-6">
   <div className="relative">
     <img
-      src="a_high_end_3d_product_showcase_scene_on_a_dark_ci.png"
+      src={banners[currentBanner]}
       alt="Banner"
       className="w-full h-72 object-cover rounded-xl shadow-xl"
     />

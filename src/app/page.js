@@ -45,13 +45,13 @@ export default function Home()
 >
   <h1 className="text-5xl font-extrabold">
     <div className="w-16 h-16 bg-white text-red-600 rounded-2xl flex items-center justify-center font-bold text-3xl mb-3">
-  N
+  WT
 </div>
-    NIMAN STORE
+    Waroeng Taeyo 
   </h1>
 
   <p className="mt-3 text-lg text-gray-200">
-    Produk Viral & Affiliate TikTok
+    Produk Viral & Barang Yang Pasti Dipakai 
   </p>
 <div className="flex gap-2 mt-4 flex-wrap">
   <span className="bg-white/20 px-3 py-1 rounded-full text-sm">
@@ -59,7 +59,7 @@ export default function Home()
   </span>
 
   <span className="bg-white/20 px-3 py-1 rounded-full text-sm">
-    🛒 Affiliate
+    🛒 Happy
   </span>
 
   <span className="bg-white/20 px-3 py-1 rounded-full text-sm">

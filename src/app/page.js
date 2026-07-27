@@ -20,7 +20,7 @@ export default function Home() {const [currentBanner, setCurrentBanner] = useSta
   }, 4000);
 
   loadProducts();
-  
+
   return () => clearInterval(timer);
 }, []);
     
@@ -143,7 +143,7 @@ WhatsApp
  shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-300 overflow-hidden"
             >
               <img
-  src={banners[currentBanner]}
+  src="a_high_end_3d_product_showcase_scene_on_a_dark_ci.png"
   alt={product.name}
  className="w-full h-40 object-cover"
 />

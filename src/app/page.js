@@ -20,7 +20,7 @@ export default function Home() {const [currentBanner, setCurrentBanner] = useSta
   }, 4000);
 
   loadProducts();
-
+  
   return () => clearInterval(timer);
 }, []);
     
@@ -35,7 +35,13 @@ export default function Home() {const [currentBanner, setCurrentBanner] = useSta
 
   return (
     <main className="min-h-screen bg-slate-100">
- <header className="bg-gradient-to-r from-red-600 via-red-700 to-black text-white p-8 shadow-xl">
+ <header
+  className="text-white p-8 bg-cover bg-center"
+  style={{
+    backgroundImage:
+      "url('a_high_end_3d_product_showcase_scene_on_a_dark_ci.png')",
+  }}
+>
   <h1 className="text-5xl font-extrabold">
     <div className="w-16 h-16 bg-white text-red-600 rounded-2xl flex items-center justify-center font-bold text-3xl mb-3">
   N
@@ -76,7 +82,7 @@ WhatsApp
 <section className="p-6">
   <div className="relative">
     <img
-      src={banners[currentBanner]}
+      src="a_high_end_3d_product_showcase_scene_on_a_dark_ci.png"
       alt="Banner"
       className="w-full h-72 object-cover rounded-xl shadow-xl"
     />
@@ -143,7 +149,7 @@ WhatsApp
  shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-300 overflow-hidden"
             >
               <img
-  src="a_high_end_3d_product_showcase_scene_on_a_dark_ci.png"
+  src={banners[currentBanner]}
   alt={product.name}
  className="w-full h-40 object-cover"
 />

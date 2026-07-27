@@ -71,9 +71,12 @@ WhatsApp
 />
 <div className="p-5">
 
-            <h3 className="font-Poppins text-2xl text-slate-800">
+            <h3 className="font-Bold text-2xl text-slate-800">
                 {product.name}
                 </h3>
+                <p className="text-red-600 font-bold text-xl">
+  Rp {product.price?.toLocaleString("id-ID")}
+</p>
 
               <p>Stok: {product.stock}</p>
 
@@ -97,7 +100,7 @@ WhatsApp
         </div>
       </section>
       <footer className="bg-black text-white text-center p-8 mt-12">
-  <h3 className="font-Poppins text-2xl text-slate-800">
+  <h3 className="font-Bold text-2xl text-slate-800">
     OJI Shoping day
   </h3>
 

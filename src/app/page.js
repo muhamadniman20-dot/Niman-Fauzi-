@@ -60,14 +60,33 @@ WhatsApp
 
 <section className="p-6">
   <img
-    src="https://picsum.photos/1200/300"
+  src="https://picsum.photos/1200/300"
     alt="Banner"
     className="w-full h-72 object-cover rounded-xl
  shadow-xl"
   />
 </section>
-      <section className="w-full px-4 py-8">
-        <h2 className="text-3xl font-bold mb-6">
+
+<section className="max-w-[1600px] mx-auto px-4 py-8">
+
+  <div className="grid grid-cols-3 gap-4 mb-8">
+    <div className="bg-white p-4 rounded-xl text-center shadow">
+      <h3 className="text-2xl font-bold">100+</h3>
+      <p>Produk</p>
+    </div>
+
+    <div className="bg-white p-4 rounded-xl text-center shadow">
+      <h3 className="text-2xl font-bold">24 Jam</h3>
+      <p>Update</p>
+    </div>
+
+    <div className="bg-white p-4 rounded-xl text-center shadow">
+      <h3 className="text-2xl font-bold">100%</h3>
+      <p>Gratis Akses</p>
+    </div>
+  </div>
+
+  <h2 className="text-3xl font-bold mb-6">
   📦 Semua Produk
 </h2>
 

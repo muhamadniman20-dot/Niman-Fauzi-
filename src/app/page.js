@@ -3,12 +3,27 @@
 import { useEffect, useState } from "react";
 import { supabase } from "./lib/supabase";
 
-export default function Home() {
+export default function Home() {const [currentBanner, setCurrentBanner] = useState(0);
+  const banners = [
+  "https://images.unsplash.com/photo-1441986300917-64674bd600d8",
+  "https://images.unsplash.com/photo-1483985988355-763728e1935b",
+  "https://images.unsplash.com/photo-1523381210434-271e8be1f52b",
+  "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d"
+];
   const [products, setProducts] = useState([]);
 
-  useEffect(() => {
-    loadProducts();
-  }, []);
+    useEffect(() => {
+  const timer = setInterval(() => {
+    setCurrentBanner((prev) =>
+      (prev + 1) % banners.length
+    );
+  }, 4000);
+
+  loadProducts();
+  
+  return () => clearInterval(timer);
+}, []);
+    
 
   async function loadProducts() {
     const { data } = await supabase
@@ -59,12 +74,25 @@ WhatsApp
 
 
 <section className="p-6">
-  <img
-  src="https://picsum.photos/1200/300"
-    alt="Banner"
-    className="w-full h-72 object-cover rounded-xl
- shadow-xl"
-  />
+  <div className="relative">
+    <img
+      src={banners[currentBanner]}
+      alt="Banner"
+      className="w-full h-72 object-cover rounded-xl shadow-xl"
+    />
+
+    <div className="absolute inset-0 bg-black/40 flex items-center px-10 rounded-xl">
+  <div>
+    <h2 className="text-5xl font-bold text-white">
+      Temukan Produk Terbaik
+    </h2>
+
+    <p className="text-white text-lg mt-3">
+      Fashion • Elektronik • Aksesoris • Affiliate Pilihan
+    </p>
+  </div>
+</div>
+  </div>
 </section>
 
 <section className="max-w-[1600px] mx-auto px-4 py-8">
@@ -115,7 +143,7 @@ WhatsApp
  shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-300 overflow-hidden"
             >
               <img
-  src={product.image}
+  src={banners[currentBanner]}
   alt={product.name}
  className="w-full h-40 object-cover"
 />

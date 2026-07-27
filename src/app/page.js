@@ -31,7 +31,19 @@ export default function Home() {
   <p className="mt-3 text-lg text-gray-200">
     Produk Viral & Affiliate TikTok
   </p>
+<div className="flex gap-2 mt-4 flex-wrap">
+  <span className="bg-white/20 px-3 py-1 rounded-full text-sm">
+    🔥 Viral
+  </span>
 
+  <span className="bg-white/20 px-3 py-1 rounded-full text-sm">
+    🛒 Affiliate
+  </span>
+
+  <span className="bg-white/20 px-3 py-1 rounded-full text-sm">
+    ⚡ Trending
+  </span>
+</div>
   <a
   href="https://wa.me/628123456789"
   target="_blank"
@@ -50,34 +62,57 @@ WhatsApp
   <img
     src="https://picsum.photos/1200/300"
     alt="Banner"
-    className="w-full h-72 object-cover rounded-3xl shadow-xl"
+    className="w-full h-72 object-cover rounded-xl
+ shadow-xl"
   />
 </section>
-      <section className="p-8 max-w-7xl mx-auto">
+      <section className="w-full px-4 py-8">
         <h2 className="text-3xl font-bold mb-6">
-          📦 Semua Produk
-        </h2>
+  📦 Semua Produk
+</h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+  <div className="bg-orange-500 text-white p-5 rounded-xl">
+    <h3 className="font-bold text-xl">🔥 Produk Viral</h3>
+    <p>Produk paling ramai dicari</p>
+  </div>
+
+  <div className="bg-blue-500 text-white p-5 rounded-xl">
+    <h3 className="font-bold text-xl">⚡ Promo Hari Ini</h3>
+    <p>Diskon dan penawaran terbaik</p>
+  </div>
+
+  <div className="bg-green-500 text-white p-5 rounded-xl">
+    <h3 className="font-bold text-xl">🚀 Produk Terbaru</h3>
+    <p>Update produk terbaru setiap hari</p>
+  </div>
+</div>
+
+<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
           {products.map((product) => (
             <div
               key={product.id}
-              className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition duration-300"
+              className="bg-white rounded-xl
+ shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-300 overflow-hidden"
             >
               <img
   src={product.image}
   alt={product.name}
-  className="w-full h-48 object-cover"
+ className="w-full h-40 object-cover"
 />
-<div className="p-5">
+<div className="p-3">
 
-            <h3 className="font-Bold text-2xl text-slate-800">
+            <h3 className="font-bold text-lg text-slate-800">
                 {product.name}
                 </h3>
-                <p className="text-red-600 font-bold text-xl">
+                <p className="text-red-600 text-xl font-bold">
   Rp {product.price?.toLocaleString("id-ID")}
 </p>
-
+<div className="mt-2">
+  <span className="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm">
+    Stok: {product.stock}
+  </span>
+</div>
               <p>Stok: {product.stock}</p>
 
 <div className="mb-3">
@@ -89,7 +124,7 @@ WhatsApp
   href={product.affiliate_link}
   target="_blank"
   rel="noopener noreferrer"
-  className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg inline-block mt-3 w-full text-center transition"
+  className="bg-green-600 hover:bg-green-700 text-white py-3 rounded-xl w-full font-semibold transition"
 
 >
   Beli Sekarang

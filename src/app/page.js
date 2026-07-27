@@ -40,7 +40,7 @@ export default function Home()
   className="text-white p-8 bg-cover bg-center"
   style={{
     backgroundImage:
-      "url('https://i.imgur.com/B4JTddv.png')",
+      "url('https://i.imgur.com/mLjsDIU.png')",
   }}
 >
   <h1 className="text-5xl font-extrabold">

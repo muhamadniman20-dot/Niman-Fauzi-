@@ -81,22 +81,24 @@ WhatsApp
 
 
 <section className="p-6">
-  <div className="relative">
+  <div className="absolute bottom-8 left-8 z-10">
     <img
       src={banners[currentBanner]}
       alt="Banner"
       className="w-full h-72 object-cover rounded-xl shadow-xl"
     />
 
-    <div className="absolute inset-0 bg-black/40 flex items-center px-10 rounded-xl">
+    <div className="absolute bottom-8 left-8 bg-black/50 backdrop-blur-sm p-6 rounded-3xl max-w-xl">
   <div>
-    <h2 className="text-5xl font-bold text-white">
-      Temukan Produk Terbaik
-    </h2>
+    <h2 className="text-4xl md:text-5xl font-black text-white">
+  🔥 Promo Pilihan Hari Ini
+</h2>
 
-    <p className="text-white text-lg mt-3">
-      Fashion • Elektronik • Aksesoris • Affiliate Pilihan
-    </p>
+
+    <p className="text-white text-sm md:text-lg mt-2">
+  Belanja Hemat • Produk Viral • Harga Terbaik
+</p>
+
   </div>
 </div>
   </div>
@@ -105,18 +107,18 @@ WhatsApp
 <section className="max-w-[1600px] mx-auto px-4 py-8">
 
   <div className="grid grid-cols-3 gap-4 mb-8">
-    <div className="bg-white p-4 rounded-xl text-center shadow">
-      <h3 className="text-2xl font-bold">100+</h3>
+    <div className="bg-gradient-to-r from-red-500 to-red-700 text-white p-4 rounded-xl text-center shadow-lg">
+      <h3 className="text-2xl font-bold">10000+Produk </h3>
       <p>Produk</p>
     </div>
 
-    <div className="bg-white p-4 rounded-xl text-center shadow">
-      <h3 className="text-2xl font-bold">24 Jam</h3>
+    <div className="bg-gradient-to-r from-orange-500 to-yellow-500 text-white p-4 rounded-xl text-center shadow-lg">
+      <h3 className="text-2xl font-bold">FLAS SALE</h3>
       <p>Update</p>
     </div>
 
-    <div className="bg-white p-4 rounded-xl text-center shadow">
-      <h3 className="text-2xl font-bold">100%</h3>
+    <div className="bg-gradient-to-r from-green-500 to-emerald-600 text-white p-4 rounded-xl text-center shadow-lg">
+      <h3 className="text-2xl font-bold">100% ORI</h3>
       <p>Gratis Akses</p>
     </div>
   </div>
@@ -190,7 +192,7 @@ WhatsApp
       </section>
       <footer className="bg-black text-white text-center p-8 mt-12">
   <h3 className="font-Bold text-2xl text-slate-800">
-    OJI Shoping day
+    Niman Shoping day
   </h3>
 
   <p className="text-gray-400 mt-2">
@@ -198,7 +200,7 @@ WhatsApp
   </p>
 
   <p className="text-gray-500 mt-4">
-    © 2026 OJI OFICIAL
+    © 2026 Niman Official 
   </p>
 </footer>
     </main>

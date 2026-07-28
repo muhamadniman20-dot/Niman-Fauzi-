@@ -45,13 +45,8 @@ export default function Home()
 >
  
   <a
-  href="https://wa.me/628123456789"
-  target="_blank"
-  rel="noopener noreferrer"
   className="inline-block mt-3 bg-green-500 px-4 py-2 rounded-lg"
 >
-
-WhatsApp
 </a>
 
  
@@ -74,7 +69,6 @@ WhatsApp
     />
 
 </div>
-
 <div className="bg-white rounded-2xl shadow p-6 mb-8">
   <div className="flex justify-between items-center mb-4">
     <h2 className="text-2xl font-bold text-red-600">

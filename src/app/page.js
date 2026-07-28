@@ -124,18 +124,21 @@ WhatsApp
     👜 Tas
   </button>
 </div>
-  <div className="bg-gradient-to-r from-red-500 to-red-700 text-white p-4 rounded-xl text-center shadow-lg">
-  <h3 className="text-2xl font-bold">🔥 Produk Viral</h3>
-  <p>Favorit Pembeli</p>
+<div className="grid grid-cols-1 md:grid-cols-3 gap-3 mb-6">
+  
+</div>
+  <div className="bg-gradient-to-r from-red-500 to-red-700 text-white p-3 rounded-xl text-center shadow-lg">
+  <h3 className="text-lg font-bold">🔥 Produk Viral</h3>
+  <p className="text-sm">Favorit Pembeli</p>
 </div>
 
-<div className="bg-gradient-to-r from-orange-500 to-yellow-500 text-white p-4 rounded-xl text-center shadow-lg">
-  <h3 className="text-2xl font-bold">⚡ Flash Sale</h3>
+<div className="bg-gradient-to-r from-orange-500 to-yellow-500 text-white p-3 rounded-xl text-center shadow-lg">
+  <h3 className="text-lg font-bold">⚡ Flash Sale</h3>
   <p>Promo Terbatas</p>
 </div>
 
-<div className="bg-gradient-to-r from-green-500 to-emerald-600 text-white p-4 rounded-xl text-center shadow-lg">
-  <h3 className="text-2xl font-bold">✅ Produk Original</h3>
+<div className="bg-gradient-to-r from-green-500 to-emerald-600 text-white p-3 rounded-xl text-center shadow-lg">
+  <h3 className="text-lg font-bold">✅ Produk Original</h3>
   <p>Kualitas Terjamin</p>
 </div>
 

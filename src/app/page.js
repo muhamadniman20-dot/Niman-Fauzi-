@@ -43,29 +43,7 @@ export default function Home()
       "url('https://i.imgur.com/mLjsDIU.png')",
   }}
 >
-  <h1 className="text-5xl font-extrabold">
-    <div className="w-16 h-16 bg-white text-red-600 rounded-2xl flex items-center justify-center font-bold text-3xl mb-3">
-  WT
-</div>
-    Waroeng Taeyo 
-  </h1>
-
-  <p className="mt-3 text-lg text-gray-200">
-    Produk Viral & Barang Yang Pasti Dipakai 
-  </p>
-<div className="flex gap-2 mt-4 flex-wrap">
-  <span className="bg-white/20 px-3 py-1 rounded-full text-sm">
-    🔥 Viral
-  </span>
-
-  <span className="bg-white/20 px-3 py-1 rounded-full text-sm">
-    🛒 Happy
-  </span>
-
-  <span className="bg-white/20 px-3 py-1 rounded-full text-sm">
-    ⚡ Trending
-  </span>
-</div>
+ 
   <a
   href="https://wa.me/628123456789"
   target="_blank"
@@ -89,79 +67,84 @@ WhatsApp
 <section className="p-6">
   <div className="absolute bottom-8 left-8 z-10">
     <img
-      src={banners[currentBanner]}
+      src={product.image}
+
       alt="Banner"
       className="w-full h-72 object-cover rounded-xl shadow-xl"
     />
 
-  
+</div>
+
+<div className="bg-white rounded-2xl shadow p-6 mb-8">
+  <div className="flex justify-between items-center mb-4">
+    <h2 className="text-2xl font-bold text-red-600">
+      ⚡ FLASH SALE
+    </h2>
+
+    <span className="text-red-500 font-semibold">
+      Lihat Semua →
+    </span>
   </div>
-<div className="max-w-4xl mx-auto my-6">
-  <input
-    type="text"
-    placeholder="🔍 Cari fashion, elektronik, aksesoris..."
-    className="w-full p-4 rounded-full border shadow-lg focus:outline-none"
-  />
-</div>
-<div className="flex flex-wrap justify-center gap-3 mb-8">
-  <button px-5 py-2 rounded-className="bg-white full shadow hover:bg-red-500 hover:text-white transition">
-    👕 Fashion
-  </button>
-
-  <button className="bg-white px-5 py-2 rounded-full shadow hover:bg-blue-500 hover:text-white transition">
-    📱 Elektronik
-  </button>
-
-  <button className="bg-white px-5 py-2 rounded-full shadow hover:bg-green-500 hover:text-white transition">
-    ⌚ Aksesoris
-  </button>
-
-  <button className="bg-white px-5 py-2 rounded-full shadow hover:bg-orange-500 hover:text-white transition">
-    🏠 Rumah Tangga
-  </button>
-
-  <button className="bg-white px-5 py-2 rounded-full shadow hover:bg-pink-500 hover:text-white transition">
-    👜 Tas
-  </button>
-</div>
-<div className="grid grid-cols-1 md:grid-cols-3 gap-3 mb-6">
-  
-</div>
-  <div className="bg-gradient-to-r from-red-500 to-red-700 text-white p-3 rounded-xl text-center shadow-lg">
-  <h3 className="text-lg font-bold">🔥 Produk Viral</h3>
-  <p className="text-sm">Favorit Pembeli</p>
 </div>
 
-<div className="bg-gradient-to-r from-orange-500 to-yellow-500 text-white p-3 rounded-xl text-center shadow-lg">
-  <h3 className="text-lg font-bold">⚡ Flash Sale</h3>
-  <p>Promo Terbatas</p>
+
+<h2 className="text-3xl font-bold mb-6">
+  📦 🛍 Semua Produk Pilihan
+``
+</h2>
+
+<div className="bg-white rounded-2xl shadow p-6 mb-8">
+  <h2 className="text-xl font-bold mb-4">
+    KATEGORI
+  </h2>
+
+  <div className="bg-white px-4 py-3 rounded-2xl shadow hover:text-red-500 cursor-pointer">
+  <span className="text-2xl">👕</span>
+  <p>Fashion</p>
 </div>
 
-<div className="bg-gradient-to-r from-green-500 to-emerald-600 text-white p-3 rounded-xl text-center shadow-lg">
-  <h3 className="text-lg font-bold">✅ Produk Original</h3>
-  <p>Kualitas Terjamin</p>
+<div className="bg-white px-4 py-3 rounded-2xl shadow hover:text-red-500 cursor-pointer">
+  <span className="text-2xl">📱</span>
+  <p>Elektronik</p>
+</div>
+
+<div className="bg-white px-4 py-3 rounded-2xl shadow hover:text-red-500 cursor-pointer">
+  <span className="text-2xl">⌚</span>
+  <p>Aksesoris</p>
+</div>
+
+<div className="bg-white px-4 py-3 rounded-2xl shadow hover:text-red-500 cursor-pointer">
+  <span className="text-2xl">👜</span>
+  <p>Tas</p>
+</div>
+
+<div className="bg-white px-4 py-3 rounded-2xl shadow hover:text-red-500 cursor-pointer">
+  <span className="text-2xl">👟</span>
+  <p>Sepatu</p>
+</div>
+
+<div className="bg-white px-4 py-3 rounded-2xl shadow hover:text-red-500 cursor-pointer">
+  <span className="text-2xl">🎧</span>
+  <p>Headset</p>
+</div>
+
+<div className="bg-white px-4 py-3 rounded-2xl shadow hover:text-red-500 cursor-pointer">
+  <span className="text-2xl">🏠</span>
+  <p>Rumah</p>
+</div>
+
+<div className="bg-white px-4 py-3 rounded-2xl shadow hover:text-red-500 cursor-pointer">
+  <span className="text-2xl">🎮</span>
+  <p>Gaming</p>
+</div>
+
 </div>
 
   <h2 className="text-3xl font-bold mb-6">
-  📦 Semua Produk
+  📦 🛍 Semua Produk Pilihan
+``
 </h2>
 
-<div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
-  <div className="bg-orange-500 text-white p-5 rounded-xl">
-    <h3 className="font-bold text-xl">🔥 Produk Viral</h3>
-    <p>Produk paling ramai dicari</p>
-  </div>
-
-  <div className="bg-blue-500 text-white p-5 rounded-xl">
-    <h3 className="font-bold text-xl">⚡ Promo Hari Ini</h3>
-    <p>Diskon dan penawaran terbaik</p>
-  </div>
-
-  <div className="bg-green-500 text-white p-5 rounded-xl">
-    <h3 className="font-bold text-xl">🚀 Produk Terbaru</h3>
-    <p>Update produk terbaru setiap hari</p>
-  </div>
-</div>
 
 <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
           {products.map((product) => (
@@ -170,7 +153,7 @@ WhatsApp
               className="bg-white rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 overflow-hidden"
             >
               <img
-  src={banners[currentBanner]}
+  src={product.image}
   alt={product.name}
  className="w-full h-40 object-cover"
 />
@@ -194,6 +177,11 @@ WhatsApp
 <p className="text-yellow-500 text-sm mt-1">
   ⭐⭐⭐⭐⭐ 5.0
 </p>
+
+<p className="text-gray-500 text-sm">
+  Terjual 120+
+</p>
+
 ``
 <div className="mt-2">
   <span className="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm">
@@ -215,10 +203,10 @@ WhatsApp
   href={product.affiliate_link}
   target="_blank"
   rel="noopener noreferrer"
-  className="bg-green-600 hover:bg-green-700 text-white py-3 rounded-xl w-full font-semibold transition"
+  cclassName="bg-orange-500 hover:bg-orange-600 text-white py-3 rounded-xl w-full font-semibold transition"
 
 >
-  Beli Sekarang
+  🛍️ Belanja Sekarang
   </a>
 </div>    
            </div>

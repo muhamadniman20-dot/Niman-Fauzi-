@@ -78,7 +78,13 @@ WhatsApp
 
  
 </header>
-
+<div className="mt-6">
+  <input
+    type="text"
+    placeholder="🔍 Cari produk..."
+    className="w-full max-w-lg px-4 py-3 rounded-xl text-black shadow-lg"
+  />
+</div>
 
 <section className="p-6">
   <div className="absolute bottom-8 left-8 z-10">
@@ -88,46 +94,56 @@ WhatsApp
       className="w-full h-72 object-cover rounded-xl shadow-xl"
     />
 
-    <div className="absolute bottom-8 left-8 bg-black/50 backdrop-blur-sm p-6 rounded-3xl max-w-xl">
-  <div>
-    <h2 className="text-4xl md:text-5xl font-black text-white">
-  🔥 Promo Pilihan Hari Ini
-</h2>
-
-
-    <p className="text-white text-sm md:text-lg mt-2">
-  Belanja Hemat • Produk Viral • Harga Terbaik
-</p>
-
+  
   </div>
+<div className="max-w-4xl mx-auto my-6">
+  <input
+    type="text"
+    placeholder="🔍 Cari fashion, elektronik, aksesoris..."
+    className="w-full p-4 rounded-full border shadow-lg focus:outline-none"
+  />
 </div>
-  </div>
-</section>
+<div className="flex flex-wrap justify-center gap-3 mb-8">
+  <button px-5 py-2 rounded-className="bg-white full shadow hover:bg-red-500 hover:text-white transition">
+    👕 Fashion
+  </button>
 
-<section className="max-w-[1600px] mx-auto px-4 py-8">
+  <button className="bg-white px-5 py-2 rounded-full shadow hover:bg-blue-500 hover:text-white transition">
+    📱 Elektronik
+  </button>
 
-  <div className="grid grid-cols-3 gap-4 mb-8">
-    <div className="bg-gradient-to-r from-red-500 to-red-700 text-white p-4 rounded-xl text-center shadow-lg">
-      <h3 className="text-2xl font-bold">10000+Produk </h3>
-      <p>Produk</p>
-    </div>
+  <button className="bg-white px-5 py-2 rounded-full shadow hover:bg-green-500 hover:text-white transition">
+    ⌚ Aksesoris
+  </button>
 
-    <div className="bg-gradient-to-r from-orange-500 to-yellow-500 text-white p-4 rounded-xl text-center shadow-lg">
-      <h3 className="text-2xl font-bold">FLAS SALE</h3>
-      <p>Update</p>
-    </div>
+  <button className="bg-white px-5 py-2 rounded-full shadow hover:bg-orange-500 hover:text-white transition">
+    🏠 Rumah Tangga
+  </button>
 
-    <div className="bg-gradient-to-r from-green-500 to-emerald-600 text-white p-4 rounded-xl text-center shadow-lg">
-      <h3 className="text-2xl font-bold">100% ORI</h3>
-      <p>Gratis Akses</p>
-    </div>
-  </div>
+  <button className="bg-white px-5 py-2 rounded-full shadow hover:bg-pink-500 hover:text-white transition">
+    👜 Tas
+  </button>
+</div>
+  <div className="bg-gradient-to-r from-red-500 to-red-700 text-white p-4 rounded-xl text-center shadow-lg">
+  <h3 className="text-2xl font-bold">🔥 Produk Viral</h3>
+  <p>Favorit Pembeli</p>
+</div>
+
+<div className="bg-gradient-to-r from-orange-500 to-yellow-500 text-white p-4 rounded-xl text-center shadow-lg">
+  <h3 className="text-2xl font-bold">⚡ Flash Sale</h3>
+  <p>Promo Terbatas</p>
+</div>
+
+<div className="bg-gradient-to-r from-green-500 to-emerald-600 text-white p-4 rounded-xl text-center shadow-lg">
+  <h3 className="text-2xl font-bold">✅ Produk Original</h3>
+  <p>Kualitas Terjamin</p>
+</div>
 
   <h2 className="text-3xl font-bold mb-6">
   📦 Semua Produk
 </h2>
 
-<div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+<div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
   <div className="bg-orange-500 text-white p-5 rounded-xl">
     <h3 className="font-bold text-xl">🔥 Produk Viral</h3>
     <p>Produk paling ramai dicari</p>
@@ -144,12 +160,11 @@ WhatsApp
   </div>
 </div>
 
-<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+<div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
           {products.map((product) => (
             <div
               key={product.id}
-              className="bg-white rounded-xl
- shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-300 overflow-hidden"
+              className="bg-white rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 overflow-hidden"
             >
               <img
   src={banners[currentBanner]}
@@ -161,20 +176,37 @@ WhatsApp
             <h3 className="font-bold text-lg text-slate-800">
                 {product.name}
                 </h3>
-                <p className="text-red-600 text-xl font-bold">
+<div className="mt-2">
+  <span className="bg-red-500 text-white text-xs px-2 py-1 rounded-full">
+    🔥 DISKON
+  </span>
+</div>
+
+<p className="text-gray-400 line-through text-sm">
+  Rp 199.000
+</p>
+                <p className="text-red-600 text-3xl font-black">
   Rp {product.price?.toLocaleString("id-ID")}
 </p>
+<p className="text-yellow-500 text-sm mt-1">
+  ⭐⭐⭐⭐⭐ 5.0
+</p>
+``
 <div className="mt-2">
   <span className="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm">
     Stok: {product.stock}
   </span>
 </div>
-              <p>Stok: {product.stock}</p>
 
 <div className="mb-3">
-  <span className="bg-red-100 text-red-700 px-3 py-1 rounded-full text-sm">
-    {product.category}
+  <span className="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-semibold">
+  #{product.category}
+</span>
+``<div className="mt-2">
+  <span className="bg-green-500 text-white text-xs px-2 py-1 rounded-full">
+    🚚 Gratis Ongkir
   </span>
+</div>
 </div>
 <a
   href={product.affiliate_link}
@@ -190,17 +222,17 @@ WhatsApp
           ))}
         </div>
       </section>
-      <footer className="bg-black text-white text-center p-8 mt-12">
-  <h3 className="font-Bold text-2xl text-slate-800">
-    Niman Shoping day
-  </h3>
+      <footer className="bg-black text-white text-center p-10 mt-16">
+  <h2 className="text-3xl font-bold">
+    WAROENG TAEYO
+  </h2>
 
   <p className="text-gray-400 mt-2">
-    Belanja Dengan Cepat Tanpa Gangguan Ongkir 
+    Fashion • Elektronik • Kebutuhan Harian
   </p>
 
-  <p className="text-gray-500 mt-4">
-    © 2026 Niman Official 
+  <p className="text-gray-500 mt-6">
+    © 2026 WAROENG TAEYO
   </p>
 </footer>
     </main>

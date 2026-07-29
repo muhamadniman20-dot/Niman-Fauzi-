@@ -5,11 +5,10 @@ import { supabase } from "./lib/supabase";
 
 export default function Home() 
 {const [currentBanner, setCurrentBanner] = useState(0);
-  const banners = [
-  "https://images.unsplash.com/photo-1441986300917-64674bd600d8",
-  "https://images.unsplash.com/photo-1483985988355-763728e1935b",
-  "https://images.unsplash.com/photo-1523381210434-271e8be1f52b",
-  "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d"
+ const banners = [
+  "https://i.imgur.com/B4JTddv.png",
+  "https://i.imgur.com/B4JTddv.png",
+  "https://i.imgur.com/B4JTddv.png"
 ];
   const [products, setProducts] = useState([]);
 
@@ -60,12 +59,11 @@ export default function Home()
 </div>
 
 <section className="p-6">
-  <div className="absolute bottom-8 left-8 z-10">
-    <img
-      src={product.image}
-
-      alt="Banner"
-      className="w-full h-72 object-cover rounded-xl shadow-xl"
+  <div className="relative">
+  <img
+    src={banners[currentBanner]}
+    alt="Banner"
+    
     />
 
 </div>
@@ -91,7 +89,7 @@ export default function Home()
   <h2 className="text-xl font-bold mb-4">
     KATEGORI
   </h2>
-
+<div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-4"></div>
   <div className="bg-white px-4 py-3 rounded-2xl shadow hover:text-red-500 cursor-pointer">
   <span className="text-2xl">👕</span>
   <p>Fashion</p>
